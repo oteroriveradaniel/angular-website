@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --navbar-height: 100px;
+  --background-color: rgb(21, 22, 24);
+	--text-color: #fff;
+	--primary-color: #ffc239;
+}
+
+body.light {
+	--background-color: rgb(255, 255, 255);
+	--text-color: #222;
+	--primary-color: #21bb80;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  fill: var(--text-color);
+
+  font-family: monospace;
+}
+
+a, button {
+  display: inline-flex;
+  align-items: center;
+}
+
+button, [role="button"] {
+  cursor: pointer;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	min-width: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	list-style: none;
+	text-decoration: none;
+	color: inherit;
+	fill: inherit;
+}
+
+main {
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  gap: 1rem;
+}
+
+section {
+  max-width: 768px;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  padding: 7.5rem 3rem 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

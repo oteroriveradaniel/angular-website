@@ -1,0 +1,44 @@
+.introduction {
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-top: 6.5rem;
+  .profile-logo {
+    height: 200px;
+    width: 200px;
+    fill: var(--primary-color);
+  }
+  .title-text {
+    font-size: 46px;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  .profile-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 0.5rem;
+
+    svg {
+      height: 32px;
+      width: 32px;
+      &:hover {
+        fill: var(--primary-color);
+      }
+    }
+  }
+
+  .contact-email {
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  .signature-text {
+    text-align: end;
+    display: inline-block;
+    width: 100%;
+  }
+}
