@@ -18,7 +18,8 @@
     a {
       border-bottom: 2px solid transparent;
       padding: 0.25rem;
-      &:hover {
+      
+      &:hover, &.active {
         border-color: var(--text-color);
       }
     }
@@ -36,6 +37,8 @@
       
       &:hover {
         transform: scale(1.2);
+        fill: var(--secondary-color);
+        border-color: var(--secondary-color);
       }
       @media screen and (max-width: 768px) {
         display: inline-flex;
@@ -45,6 +48,9 @@
     .ref-text {
       @media screen and (max-width: 768px) {
         display: none;
+      }
+      &:hover {
+        color: var(--secondary-color);
       }
     }
 

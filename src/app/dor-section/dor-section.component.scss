@@ -1,0 +1,19 @@
+.dor-section {
+  width: 100%;
+  .section-title {
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  .section-subtitle {
+    font-size: 18px;
+    margin: .5rem 0;
+    font-weight: bold;
+    b {
+      color: var(--secondary-color);
+    }
+  }
+  .section-content {
+    margin-top: .5rem;
+  }
+}

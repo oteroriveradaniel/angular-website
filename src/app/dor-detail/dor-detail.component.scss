@@ -1,0 +1,20 @@
+button {
+  display: flex;
+  gap: .5rem;
+  width: 100%;
+  font-size: 16px;
+  svg {
+    height: 24px;
+    width: 24px;
+    flex: 0 0 24px;
+  }
+  &:hover {
+    svg {
+      fill: var(--secondary-color);
+    }
+  }
+}
+
+.detail-container {
+  margin-top: .5rem;
+}

@@ -1,6 +1,79 @@
-<h2>Daniel Otero Rivera</h2>
-<p>
-  Soy desarrollador y diseñador web con expriencia en llevar proyectos 
-  desde su concepción inicial hasta su implementación funcional en entornos 
-  web, comunicando el mundo creativo con el técnico.
-</p>
+<section class="portfolio">
+  <app-dor-section 
+    title="Daniel Otero Rivera"
+    subtitle="Desarrollador y diseñador web.">
+    <p>
+      Soy desarrollador y diseñador web con expriencia en llevar proyectos 
+      desde su concepción inicial hasta su implementación funcional en entornos 
+      web, comunicando el mundo creativo con el técnico.
+    </p>
+    <br>
+    <p>
+      Mi enfoque se centra en la accesibilidad y la compatibilidad, 
+      garantizando que las mejores prácticas se integren de
+      manera efectiva para transformar las necesidades del cliente 
+      en soluciones personalizadas.
+    </p>
+    <div class="contact-info-list">
+      <app-dor-icon text="+34 655 42 45 43">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/></svg>
+      </app-dor-icon>
+      <app-dor-icon text="oteroriveradaniel&#64;gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+      </app-dor-icon>
+    </div>
+  </app-dor-section>
+  
+  <app-dor-section title="Experiencia Laboral">
+    <div class="portfolio-items">
+      @for (item of experienceList; track item.id) {
+        <app-dor-detail>
+          <p class="portfolio-item-field detail-toggle">
+            <b>{{ item.field }}</b> en 
+            <br><b>{{ item.company }}</b> de 
+            <br><b>{{ item.from }}</b> a 
+            <b>{{ item.to }}</b>.
+          </p>
+          <div class="detail-content">
+            <p class="portfolio-item-desc">
+              <b>{{ item.description }}</b>
+            </p>
+            <div class="portfolio-item-list">
+              @for (task of item.tasks; track task) {
+                <div class="portfolio-item-list-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                  <p>{{ task }}</p>
+                </div>
+              }
+            </div>
+          </div>
+        </app-dor-detail>
+        <div class="portfolio-item-separator"></div>
+      }
+    </div>
+  </app-dor-section>
+  <app-dor-section title="Formación Académica">
+    <div class="portfolio-items">
+      @for (item of educationList; track item.id) {
+        <app-dor-detail>
+          <p class="portfolio-item-field detail-toggle">
+            <b>{{ item.degree }}</b> en 
+            <br><b>{{ item.school }}</b> año 
+            <br><b>{{ item.year }}</b>.
+          </p>
+          <div class="detail-content">
+            <div class="portfolio-item-list">
+              @for (competency of item.competencies; track competency) {
+                <div class="portfolio-item-list-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                  <p>{{ competency }}</p>
+                </div>
+              }
+            </div>
+          </div>
+        </app-dor-detail>
+        <div class="portfolio-item-separator"></div>
+      }
+    </div>
+  </app-dor-section>
+</section>
