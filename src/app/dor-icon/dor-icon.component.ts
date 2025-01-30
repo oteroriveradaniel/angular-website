@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dor-icon',
@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './dor-icon.component.scss'
 })
 export class DorIconComponent {
-  @Input() src: string = "";
-  @Input() text: string = "";
+
 }

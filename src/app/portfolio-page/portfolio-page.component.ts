@@ -3,12 +3,11 @@ import { PortfolioDetailEducationItem, PortfolioDetailExperienceItem } from '../
 import { DorDetailComponent } from '../dor-detail/dor-detail.component';
 import { DorIconComponent } from "../dor-icon/dor-icon.component";
 import { DorSectionComponent } from '../dor-section/dor-section.component';
-import { DorTimelineComponent } from "../dor-timeline/dor-timeline.component";
 
 @Component({
   selector: 'app-portfolio-page',
   standalone: true,
-  imports: [DorDetailComponent, DorIconComponent, DorSectionComponent, DorTimelineComponent],
+  imports: [DorDetailComponent, DorIconComponent, DorSectionComponent],
   templateUrl: './portfolio-page.component.html',
   styleUrl: './portfolio-page.component.scss'
 })
