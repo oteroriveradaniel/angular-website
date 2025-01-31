@@ -1,0 +1,22 @@
+.dor-horizontal-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+  gap: 1rem;
+
+  li a {
+    white-space: nowrap;
+    padding: .25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid var(--text-color);
+    &:hover {
+      border-color: var(--secondary-color);
+    }
+  }
+
+  svg {
+    fill: var(--primary-color);
+  }
+}

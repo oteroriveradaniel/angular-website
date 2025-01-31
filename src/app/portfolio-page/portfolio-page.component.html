@@ -1,7 +1,8 @@
 <section class="portfolio">
   <app-dor-section 
     title="Daniel Otero Rivera"
-    subtitle="Desarrollador y diseñador web.">
+    subtitle="Desarrollador y diseñador web."
+    info="Inglés certificado C1.">
     <p>
       Soy desarrollador y diseñador web con expriencia en llevar proyectos 
       desde su concepción inicial hasta su implementación funcional en entornos 
@@ -26,7 +27,7 @@
     </div>
   </app-dor-section>
   
-  <app-dor-section title="Experiencia Laboral">
+  <app-dor-section title="Experiencia Laboral.">
     <div class="portfolio-items">
       @for (item of experienceList; track item.id) {
         <app-dor-detail>
@@ -54,7 +55,7 @@
       }
     </div>
   </app-dor-section>
-  <app-dor-section title="Formación Académica">
+  <app-dor-section title="Formación Académica.">
     <div class="portfolio-items">
       @for (item of educationList; track item.id) {
         <app-dor-detail>
@@ -76,6 +77,34 @@
         </app-dor-detail>
         <div class="portfolio-item-separator"></div>
       }
+    </div>
+  </app-dor-section>
+  <app-dor-section title="Formación Complementaria.">
+    <div class="portfolio-item-list">
+      <a target="_blank" href="https://frontendmasters.com/courses/archive/testing-practices-principles/">
+        <app-dor-icon>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+          <p><b>JavaScript Testing Practices and Principles.</b><br>frontendmasters.com<br>Kent C. Dodds<br>2024, 4 horas</p>
+        </app-dor-icon>
+      </a>
+      <a target="_blank" href="https://frontendmasters.com/courses/everything-git/">
+        <app-dor-icon>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+          <p><b>Everything You'll Need to Know About Git.</b><br>frontendmasters.com<br>ThePrimeagen<br>2024, 4 horas</p>
+        </app-dor-icon>
+      </a>
+      <a target="_blank" href="https://frontendmasters.com/courses/react-typescript-v2/">
+        <app-dor-icon>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+          <p><b>React and TypeScript, v2.</b><br>frontendmasters.com<br>Steve Kinney<br>2024, 5 horas</p>
+        </app-dor-icon>
+      </a>
+      <a target="_blank" href="https://frontendmasters.com/courses/svelte-v2/">
+        <app-dor-icon>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg>
+          <p><b>Svelte Fundamentals.</b><br>frontendmasters.com<br>Rich Harris<br>2024, 5 horas</p>
+        </app-dor-icon>
+      </a>
     </div>
   </app-dor-section>
 </section>

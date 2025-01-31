@@ -1,9 +1,9 @@
 .introduction {
   flex-direction: column;
   gap: 2.5rem;
-  padding-top: 6.5rem;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - var(--navbar-height));
   .profile-logo {
     height: 200px;
     width: 200px;
@@ -27,14 +27,14 @@
       height: 32px;
       width: 32px;
       &:hover {
-        fill: var(--primary-color);
+        fill: var(--secondary-color);
       }
     }
   }
 
   .contact-email {
     &:hover {
-      color: var(--primary-color);
+      color: var(--secondary-color);
     }
   }
 

@@ -27,7 +27,7 @@ export class PortfolioPageComponent {
         "Comunicación directa con clientes; toma de requisitos, resolución de incidencias, servicio de soporte, servicio de venta...", 
         "Implementación de gráficos y mapas a través de librerías de visualización como D3, Highcharts o jQWidgets; adaptando las funcionalidades a los requisitos de la aplicación.", 
         "Diseño de layouts y temas personalizados con CSS3.", 
-        "Desarrollo de componentes personalizados ocn JavaScript.", 
+        "Desarrollo de componentes personalizados con JavaScript.", 
         "Conexión con bases de datos no relacionales ( MongoDB ).", 
         "Soporte al equipo de desarrollo backend con la arquitectura de la base de datos ( BigQuery ) y el sistema ( Python + Flask ).", 
       ], 

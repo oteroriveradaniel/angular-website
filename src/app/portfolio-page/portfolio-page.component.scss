@@ -7,6 +7,8 @@
 
   font-size: 14px;
   font-weight: initial;
+
+  padding: 2rem 2rem 5rem;
   
   .contact-info-list {
     display: flex;
@@ -35,7 +37,7 @@
     }
 
     .portfolio-item-field {
-      width: 300px;
+      max-width: 300px;
       &:hover {
         b {
           color: var(--secondary-color);
@@ -48,18 +50,29 @@
       margin-left: 2rem;
       color: var(--primary-color);
     }
-  
-    .portfolio-item-list {
+  }
+
+  .portfolio-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    .portfolio-item-list-item {
       display: flex;
-      flex-direction: column;
       gap: .5rem;
-      .portfolio-item-list-item {
-        display: flex;
-        gap: .5rem;
+      svg {
+        height: 24px;
+        width: 24px;
+        flex: 0 0 24px;
+      }
+    }
+
+    a {
+      &:hover {
+        b {
+          color: var(--secondary-color);
+        }
         svg {
-          height: 24px;
-          width: 24px;
-          flex: 0 0 24px;
+          fill: var(--secondary-color);
         }
       }
     }

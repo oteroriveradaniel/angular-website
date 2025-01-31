@@ -26,7 +26,6 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   fill: var(--text-color);
-  font-weight: bold;
 
   font-family: monospace;
 }
@@ -66,6 +65,8 @@ button, [role="button"] {
 
 main {
   min-height: 100vh;
+  padding-top: var(--navbar-height);
+  align-items: flex-start;
   display: flex;
   justify-content: center;
   overflow-y: auto;
@@ -76,7 +77,5 @@ section {
   max-width: 768px;
   width: 100%;
   margin: auto;
-  min-height: 100vh;
-  padding: 7.5rem 3rem 5.5rem;
   display: flex;
 }

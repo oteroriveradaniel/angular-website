@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 export class DorSectionComponent {
   @Input() title: string = "";
   @Input() subtitle: string = "";
+  @Input() info: string = "";
 }

@@ -24,6 +24,11 @@
       }
     }
 
+    .ref-icon.active {
+      border-color: var(--secondary-color);
+      fill: var(--secondary-color);
+    }
+
     @media screen and (max-width: 768px) {
       justify-content: space-evenly;
     }
